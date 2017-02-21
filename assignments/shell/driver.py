@@ -99,21 +99,21 @@ class commandChecker(commandSplitter):
 				self.thread_t.join()
 			
 			#PWD COMMAND
-			elif str.upper(self.mainCommand) == "MKDIR":
+			elif str.upper(self.mainCommand) == "PWD":
 				self.thread_t = threading.Thread(target=commandsClass.pwd, args=(self.splitCommand, self.commandLength))
 				self.thread_t.daemon = self.daemonStatus
 				self.thread_t.start()
 				self.thread_t.join()
 				
 			#HEAD COMMAND
-			elif str.upper(self.mainCommand) == "MKDIR":
+			elif str.upper(self.mainCommand) == "HEAD":
 				self.thread_t = threading.Thread(target=commandsClass.head, args=(self.splitCommand, self.commandLength))
 				self.thread_t.daemon = self.daemonStatus
 				self.thread_t.start()
 				self.thread_t.join()
 				
 			#TAIL COMMAND
-			elif str.upper(self.mainCommand) == "MKDIR":
+			elif str.upper(self.mainCommand) == "TAIL":
 				self.thread_t = threading.Thread(target=commandsClass.tail, args=(self.splitCommand, self.commandLength))
 				self.thread_t.daemon = self.daemonStatus
 				self.thread_t.start()
