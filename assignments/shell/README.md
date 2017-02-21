@@ -9,7 +9,6 @@
 |  Valliyil, Saikiran  | valliyilmenon@gmail.com| Valliyilmenon  |
 | Tinubu, Oluwaseyi | tinubuseyi@gmail.com | Decastrino|
 
-
 Date Completed: 02/20/2017
 ===============================================================================================
 
@@ -52,6 +51,21 @@ It also handles getting the sizes of each files in the shell, date accessed, dat
 
 
 
+===================================================================================================================================
+
+How to run the shell.
+
+From command prompt, navigate to the directoey where the shell program folder is located e.g c:\Users\...\...\Helix\project folder>
+
+On getting to the project folder, type python leave a space and the name of the file to be run. E.g. 
+projectFolder>python driver.py
+
+The above step gets you into our shell interface where you can run the implemented commands.
+It begins with a prompt...%.
+
+The commands that will work in the shell environment are listed below
+
+================================================================================================================================
 Commands implemented:
 
 1.  ls:
@@ -69,7 +83,8 @@ Commands implemented:
 
 5. wc:  counts number of words in a file and outputs the result to the screen
 
-6. rm:  Removes a file. it also removes a directory. 
+6. rm:  Removes a file. 
+        it also removes a directory.(rmdir)
 
 7. mkdir: creates a new directory.
 
@@ -79,3 +94,13 @@ Commands implemented:
 
 10. prints out the last few lines/characters of a file.
 
+11. Various user level permissions where also implemented.
+
+Commands not yet implemented:
+
+1. pipe
+
+2. command > file and file > command.
+
+Commands not working correctly:
+1. grep
